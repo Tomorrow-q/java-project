@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="hotelSystem:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="198407ca-2f28-4a9a-a561-85724654f3e8" name="Default Changelist" comment="hotel预订">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotelSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/annotation/DML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/annotation/InsertSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/annotation/SQLParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/annotation/TableName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/constant/CacheConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/constant/Methods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/constant/Pages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/listener/MyServletContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/servlet/OrderRoomServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/servlet/RemarkServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/servlet/RoomServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/servlet/UserRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/controller/servlet/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/BaseDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/HotelDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/MyDataSourceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/OrderRoomDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/PictrueDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/RemarkDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/RoomDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/HotelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/MyDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/MyUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/OrderRoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/RemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/ResultMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/RoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/SqlMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/dao/inter/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/exception/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/OrderRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/Remark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/abs/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/abs/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/po/abs/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/proxy/SQLHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/constant/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/impl/OrderRoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/impl/RemarkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/impl/RoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/inter/OrderRoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/inter/RemarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/inter/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/service/inter/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestBeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestHotelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestJdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestMyDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestMyUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestRegex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestRoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestServiceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestStringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/test/TestUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/ControllerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/Md5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/ReflectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/ServiceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/UUIDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/util/UploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/hyc/www/vo/PagesVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/data_source.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/db_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/factory.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/c-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/c-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/c.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/XHotel.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fmt-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fmt-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fmt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fn.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/permittedTaglibs.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scriptfree.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sql-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sql-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sql.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/x-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/x-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/x.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/0376908a65214eabbaf58b15e4b48285.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/0a29e8ee91b4470eaa6183a343b692f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/0acdeefa9cc643f0962d49f6368e81c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/12cf6c3d3d1046f6b89c12d657f7fa1f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/136feda945fc4b97ae9e39c39c9ab6cb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/1e9e4239b13c4b62bfe2998eacccd162.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/22e3078531bc4690b2d4a8af716fe9a0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/2a027f25c56c46798738715914501f3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/3154086e2a0d4dcaa01e37d4049bc855.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/385e551ef4c240c0a9534b616ed2c6b0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/3b40290bd3474d9e8a7555b17f0368ba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/3bf3366f05304530a93a29df285622c8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/3faf113037a5400287b31018123c997e.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/4803463ce1034dc0a60673f8cf2e739d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/4844ce2d061d4483a59998a01d879800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/5b3373b772e140f98bcc6b38862af8d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/6052289076d140a4a3f0786620a89bc7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/659e4ee559e94bcc854cef383fbacaa7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/81850a46ac7a43bf92fc786fa2b167f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/85447d8e4e274b4b8ac0a05134c0db9a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/89696419c8784dd2a520f576483f25f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/89c8f5fadf154083be94e1d16db870bf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/93daffe43c0f4015b34b32400c244185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/9bcfc823dab64478a8ceb310dd044a7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/9f70760195934547a828f54ccba8fb65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/9fe40472c541479591cbef965c2fd611.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/a3b15733ce4140c08aa813fb73fcd4bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/a3ea8dbbcb6a4a7d970afaf8f9a800fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/a6f5e33430674f1e94b65b496029b483.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/a776d583200a43d49e52d9017571c145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/aac595e957804baa94920eae5db4d0e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/b0cb2498e9ad40cdaf848f9dacb9ff0b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/b1804e00fe294ad9abb0f22353bc3668.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/b49bb5181cbb47d99e558d8ac5b76ba8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/b585cc5b774645d182ea4cf9f08d68ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/b7fb2f8ad4df4440a762381ad8c56f0d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/bcebf55f98b84e41bb395566a51b60da.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/cd43f61d63e84e9b8c0918defe313816.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/d682b23c55854cc5874904b1715a0e6f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/d75daa598de449159220f3a64d0dc447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/d9d8145f34e74860991c56fa466fbf20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/e65ba37b19b0419db15015da7acdc0f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/e734e474ec69480c9c9fe8d4c14c8794.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/e93f57968f8d413f853b9130ff00bf0f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/f5d5cf20288043fa9afc35558921edec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/f7751f1d744b4e23897a96241d6c108b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/fc21203b376d4cc5851974b5ebe9280d.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/file/photo/阚清子2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/hotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/hotel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pictures.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/remark.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/room.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/annotation/DML.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/annotation/InsertSQL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/annotation/SQLParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/annotation/TableName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/constant/CacheConst.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/constant/Methods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/constant/Pages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/listener/MyServletContextListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/OrderRoomServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/OrderRoomServlet$FindType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/OrderRoomServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/RemarkServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/RemarkServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/RoomServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/RoomServlet$findType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/RoomServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserRegister$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserRegister.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserServlet$FindType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserServlet$UpdateType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/controller/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/BaseDaoImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/BaseDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/HotelDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/MyDataSourceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/OrderRoomDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/PictrueDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/RemarkDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/RoomDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/BaseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/HotelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/MyDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/MyUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/OrderRoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/RemarkDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/ResultMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/RoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/SqlMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/dao/inter/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/exception/DaoException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/exception/ServiceException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/Hotel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/OrderRoom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/Picture.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/Remark.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/abs/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/abs/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/po/abs/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/proxy/SQLHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/constant/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/impl/OrderRoomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/impl/RemarkServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/impl/RoomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/inter/OrderRoomService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/inter/RemarkService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/inter/RoomService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/service/inter/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestHotelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestJdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestMyDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestMyUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestOrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestRemarkDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestRoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestServiceUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestStringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/test/TestUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/BeanFactory$DaoType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/BeanFactory$ServiceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/BeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/BeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/ControllerUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/JdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/Md5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/ReflectUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/ServiceUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/StringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/UUIDUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/util/UploadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hyc/www/vo/PagesVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/data_source.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/factory.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/Test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/c-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/c-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/c.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/classes/META-INF/XHotel.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/fmt-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/fmt-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/fmt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/fn.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/permittedTaglibs.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/scriptfree.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/sql-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/sql-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/sql.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/x-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/x-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/x.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/0376908a65214eabbaf58b15e4b48285.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/0a29e8ee91b4470eaa6183a343b692f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/0acdeefa9cc643f0962d49f6368e81c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/12cf6c3d3d1046f6b89c12d657f7fa1f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/136feda945fc4b97ae9e39c39c9ab6cb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/1e9e4239b13c4b62bfe2998eacccd162.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/22e3078531bc4690b2d4a8af716fe9a0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/2a027f25c56c46798738715914501f3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/3154086e2a0d4dcaa01e37d4049bc855.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/385e551ef4c240c0a9534b616ed2c6b0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/3b40290bd3474d9e8a7555b17f0368ba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/3bf3366f05304530a93a29df285622c8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/3faf113037a5400287b31018123c997e.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/4803463ce1034dc0a60673f8cf2e739d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/4844ce2d061d4483a59998a01d879800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/5b3373b772e140f98bcc6b38862af8d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/6052289076d140a4a3f0786620a89bc7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/659e4ee559e94bcc854cef383fbacaa7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/81850a46ac7a43bf92fc786fa2b167f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/85447d8e4e274b4b8ac0a05134c0db9a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/89696419c8784dd2a520f576483f25f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/89c8f5fadf154083be94e1d16db870bf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/93daffe43c0f4015b34b32400c244185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/9bcfc823dab64478a8ceb310dd044a7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/9f70760195934547a828f54ccba8fb65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/9fe40472c541479591cbef965c2fd611.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/a3b15733ce4140c08aa813fb73fcd4bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/a3ea8dbbcb6a4a7d970afaf8f9a800fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/a6f5e33430674f1e94b65b496029b483.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/a776d583200a43d49e52d9017571c145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/aac595e957804baa94920eae5db4d0e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/b0cb2498e9ad40cdaf848f9dacb9ff0b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/b1804e00fe294ad9abb0f22353bc3668.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/b49bb5181cbb47d99e558d8ac5b76ba8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/b585cc5b774645d182ea4cf9f08d68ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/b7fb2f8ad4df4440a762381ad8c56f0d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/bcebf55f98b84e41bb395566a51b60da.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/cd43f61d63e84e9b8c0918defe313816.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/d682b23c55854cc5874904b1715a0e6f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/d75daa598de449159220f3a64d0dc447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/d9d8145f34e74860991c56fa466fbf20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/e65ba37b19b0419db15015da7acdc0f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/e734e474ec69480c9c9fe8d4c14c8794.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/e93f57968f8d413f853b9130ff00bf0f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/f5d5cf20288043fa9afc35558921edec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/f7751f1d744b4e23897a96241d6c108b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/fc21203b376d4cc5851974b5ebe9280d.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/file/photo/阚清子2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/hotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/hotel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/pictures.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/remark.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/room.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/Test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/c-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/c-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/c.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/META-INF/XHotel.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/annotation/DML.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/annotation/InsertSQL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/annotation/SQLParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/annotation/TableName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/constant/CacheConst.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/constant/Methods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/constant/Pages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/listener/MyServletContextListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/OrderRoomServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/OrderRoomServlet$FindType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/OrderRoomServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/RemarkServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/RemarkServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/RoomServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/RoomServlet$findType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/RoomServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserRegister$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserRegister.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserServlet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserServlet$FindType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserServlet$UpdateType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/controller/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/BaseDaoImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/BaseDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/HotelDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/MyDataSourceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/OrderRoomDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/PictrueDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/RemarkDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/RoomDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/BaseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/HotelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/MyDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/MyUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/OrderRoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/RemarkDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/ResultMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/RoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/SqlMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/dao/inter/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/exception/DaoException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/exception/ServiceException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/Hotel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/OrderRoom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/Picture.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/Remark.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/Room.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/abs/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/abs/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/po/abs/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/proxy/SQLHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/constant/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/impl/OrderRoomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/impl/RemarkServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/impl/RoomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/inter/OrderRoomService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/inter/RemarkService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/inter/RoomService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/service/inter/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestHotelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestJdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestMyDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestMyUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestOrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestRegex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestRemarkDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestRoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestServiceUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestStringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/test/TestUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/BeanFactory$DaoType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/BeanFactory$ServiceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/BeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/BeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/ControllerUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/JdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/Md5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/ReflectUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/ServiceUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/StringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/UUIDUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/util/UploadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/com/hyc/www/vo/PagesVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/data_source.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/db_config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/factory.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/Test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/c-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/c-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/c.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/classes/META-INF/XHotel.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/fmt-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/fmt-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/fmt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/fn.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/permittedTaglibs.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/scriptfree.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/sql-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/sql-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/sql.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/x-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/x-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/WEB-INF/x.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/0376908a65214eabbaf58b15e4b48285.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/0a29e8ee91b4470eaa6183a343b692f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/0acdeefa9cc643f0962d49f6368e81c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/12cf6c3d3d1046f6b89c12d657f7fa1f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/136feda945fc4b97ae9e39c39c9ab6cb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/1e9e4239b13c4b62bfe2998eacccd162.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/22e3078531bc4690b2d4a8af716fe9a0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/2a027f25c56c46798738715914501f3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/3154086e2a0d4dcaa01e37d4049bc855.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/385e551ef4c240c0a9534b616ed2c6b0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/3b40290bd3474d9e8a7555b17f0368ba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/3bf3366f05304530a93a29df285622c8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/3faf113037a5400287b31018123c997e.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/4803463ce1034dc0a60673f8cf2e739d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/4844ce2d061d4483a59998a01d879800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/5b3373b772e140f98bcc6b38862af8d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/6052289076d140a4a3f0786620a89bc7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/659e4ee559e94bcc854cef383fbacaa7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/81850a46ac7a43bf92fc786fa2b167f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/85447d8e4e274b4b8ac0a05134c0db9a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/89696419c8784dd2a520f576483f25f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/89c8f5fadf154083be94e1d16db870bf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/93daffe43c0f4015b34b32400c244185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/9bcfc823dab64478a8ceb310dd044a7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/9f70760195934547a828f54ccba8fb65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/9fe40472c541479591cbef965c2fd611.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/a3b15733ce4140c08aa813fb73fcd4bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/a3ea8dbbcb6a4a7d970afaf8f9a800fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/a6f5e33430674f1e94b65b496029b483.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/a776d583200a43d49e52d9017571c145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/aac595e957804baa94920eae5db4d0e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/b0cb2498e9ad40cdaf848f9dacb9ff0b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/b1804e00fe294ad9abb0f22353bc3668.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/b49bb5181cbb47d99e558d8ac5b76ba8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/b585cc5b774645d182ea4cf9f08d68ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/b7fb2f8ad4df4440a762381ad8c56f0d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/bcebf55f98b84e41bb395566a51b60da.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/cd43f61d63e84e9b8c0918defe313816.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/d682b23c55854cc5874904b1715a0e6f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/d75daa598de449159220f3a64d0dc447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/d9d8145f34e74860991c56fa466fbf20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/e65ba37b19b0419db15015da7acdc0f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/e734e474ec69480c9c9fe8d4c14c8794.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/e93f57968f8d413f853b9130ff00bf0f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/f5d5cf20288043fa9afc35558921edec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/f7751f1d744b4e23897a96241d6c108b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/fc21203b376d4cc5851974b5ebe9280d.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/file/photo/阚清子2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/hotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/hotel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/pictures.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/remark.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/room.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/classes/webapp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/fmt-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/fmt-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/fmt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/fn.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/gson-2.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/permittedTaglibs.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/scriptfree.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/sql-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/sql-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/sql.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/x-1_0-rt.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/x-1_0.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/WEB-INF/x.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/0376908a65214eabbaf58b15e4b48285.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/0a29e8ee91b4470eaa6183a343b692f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/0acdeefa9cc643f0962d49f6368e81c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/12cf6c3d3d1046f6b89c12d657f7fa1f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/136feda945fc4b97ae9e39c39c9ab6cb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/1e9e4239b13c4b62bfe2998eacccd162.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/22e3078531bc4690b2d4a8af716fe9a0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/2a027f25c56c46798738715914501f3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/3154086e2a0d4dcaa01e37d4049bc855.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/385e551ef4c240c0a9534b616ed2c6b0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/3b40290bd3474d9e8a7555b17f0368ba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/3bf3366f05304530a93a29df285622c8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/3faf113037a5400287b31018123c997e.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/4803463ce1034dc0a60673f8cf2e739d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/4844ce2d061d4483a59998a01d879800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/5b3373b772e140f98bcc6b38862af8d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/6052289076d140a4a3f0786620a89bc7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/659e4ee559e94bcc854cef383fbacaa7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/81850a46ac7a43bf92fc786fa2b167f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/85447d8e4e274b4b8ac0a05134c0db9a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/89696419c8784dd2a520f576483f25f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/89c8f5fadf154083be94e1d16db870bf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/93daffe43c0f4015b34b32400c244185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/9bcfc823dab64478a8ceb310dd044a7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/9f70760195934547a828f54ccba8fb65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/9fe40472c541479591cbef965c2fd611.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/a3b15733ce4140c08aa813fb73fcd4bd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/a3ea8dbbcb6a4a7d970afaf8f9a800fa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/a6f5e33430674f1e94b65b496029b483.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/a776d583200a43d49e52d9017571c145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/aac595e957804baa94920eae5db4d0e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/b0cb2498e9ad40cdaf848f9dacb9ff0b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/b1804e00fe294ad9abb0f22353bc3668.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/b49bb5181cbb47d99e558d8ac5b76ba8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/b585cc5b774645d182ea4cf9f08d68ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/b7fb2f8ad4df4440a762381ad8c56f0d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/bcebf55f98b84e41bb395566a51b60da.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/cd43f61d63e84e9b8c0918defe313816.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/d682b23c55854cc5874904b1715a0e6f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/d75daa598de449159220f3a64d0dc447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/d9d8145f34e74860991c56fa466fbf20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/e65ba37b19b0419db15015da7acdc0f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/e734e474ec69480c9c9fe8d4c14c8794.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/e93f57968f8d413f853b9130ff00bf0f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/f5d5cf20288043fa9afc35558921edec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/f7751f1d744b4e23897a96241d6c108b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/fc21203b376d4cc5851974b5ebe9280d.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/file/photo/阚清子2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/hotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/hotel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/pictures.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/remark.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/room.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hotelSystem/user.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\hotelSystem\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectId" id="1mUUmOVArRQmVgS064joLZ61UwB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14972419" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hyc.www.controller.servlet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\hotelSystem\src\main\webapp\js" />
+      <recent name="F:\hotelSystem\src\main\webapp" />
+      <recent name="F:\hotelSystem\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.61" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.61" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hotelSystem/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="hotelSystem:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/hotelSystem" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_hotelSystem" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60924" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="hotelSystem:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.20104633" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="198407ca-2f28-4a9a-a561-85724654f3e8" name="Default Changelist" comment="" />
+      <created>1609547821627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609547821627</updated>
+      <workItem from="1609547824458" duration="29567000" />
+      <workItem from="1609632408923" duration="1078000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hotel预订" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotel预订" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="110" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609548389663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="110" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609548389663" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1609553794964">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1609553794964" />
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1609633456908">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609633456908" />
+    <state width="416" height="466" key="DebuggerActiveHint" timestamp="1609582184247">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="416" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1609582184247" />
+    <state x="355" y="108" key="FileChooserDialogImpl" timestamp="1609633214586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="355" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609633214586" />
+    <state width="1068" height="148" key="GridCell.Tab.0.bottom" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.0.center" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.0.left" timestamp="1609611053364">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609611053364" />
+    <state width="1068" height="148" key="GridCell.Tab.0.right" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.1.bottom" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.1.center" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.1.left" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.1.right" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.2.bottom" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.2.center" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.2.left" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="148" key="GridCell.Tab.2.right" timestamp="1609611053365">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="148" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1609611053365" />
+    <state width="1068" height="137" key="GridCell.Tab.3.bottom" timestamp="1609583421054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="137" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609583421054" />
+    <state width="1068" height="137" key="GridCell.Tab.3.center" timestamp="1609583421054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="137" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1609583421054" />
+    <state width="1068" height="137" key="GridCell.Tab.3.left" timestamp="1609583421054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="137" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1609583421054" />
+    <state width="1068" height="137" key="GridCell.Tab.3.right" timestamp="1609583421054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1068" height="137" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1609583421054" />
+    <state x="75" y="0" key="SettingsEditor" timestamp="1609633200822">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="75" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609633200822" />
+    <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1609632409744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1609632409744" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1609581062010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1609581062010" />
+  </component>
+</project>
